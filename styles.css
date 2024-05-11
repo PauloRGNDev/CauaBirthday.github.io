@@ -1,0 +1,128 @@
+h1{
+    color:darkblue;
+}
+
+html{
+    background-color: rgb(51, 47, 47);
+}
+
+body{
+    margin: 70px;
+    padding: 50px;
+    border: 3px solid blue;
+    background-color: black;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.padding-screen{
+    width: 100%;
+}
+
+.center-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+@keyframes confetti {
+    0% {transform: translateY(0) rotate(0deg);}
+    100% {transform: translateY(100vh) rotate(360deg);}
+  }
+  
+  .confetti {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    animation: confetti 2s linear infinite;
+  }
+  
+  .confetti:nth-child(2) {
+    background: #0f0;
+    animation-delay: 0.2s;
+  }
+  
+  .confetti:nth-child(3) {
+    background: #00f;
+    animation-delay: 0.4s;
+  }
+  
+  /* Adicione mais confetes conforme necessário */
+  
+  .video-container {
+    position: relative;
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+  }
+
+/*hearth css animation*/
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  
+  .heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+  }
+  
+  .heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  /* Adicione a animação de pulsação ao coração */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .heart {
+    animation: pulse 1s infinite;
+  }
+
+.hidden{
+    visibility: hidden;
+}
+
+/*estilização de texto*/
+h1 {
+    font-size: 50px; /* Torna o texto maior */
+    color: #FF6347; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #FFFACD; /* Cor de fundo */
+    border: 2px dashed #FF4500; /* Borda tracejada */
+    border-radius: 10px; /* Bordas arredondadas */
+    animation: pulse 1s; /* Animação de pulsação */
+  }
+  
+  /* Animação de pulsação */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
